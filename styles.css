@@ -245,3 +245,75 @@ section.visible {
     font-size: 1.3rem; /* Zwiększenie rozmiaru czcionki */
     font-weight: bold; /* Pogrubienie czcionki */
 }
+/* Dla urządzeń o szerokości mniejszej niż 768px (telefony) */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 3rem; /* Mniejszy rozmiar czcionki dla nagłówka */
+    }
+
+    nav ul {
+        flex-direction: column; /* Menu pionowe na telefonach */
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Większy odstęp między elementami menu */
+    }
+
+    .gallery-images img {
+        max-width: 100%; /* Pełna szerokość obrazów w galerii */
+        margin: 10px 0;
+    }
+
+    .map {
+        width: 100%; /* Pełna szerokość mapy */
+        height: 300px; /* Mniejsza wysokość mapy */
+    }
+
+    .service-list {
+        flex-direction: column; /* Usługi w kolumnie na telefonach */
+    }
+
+    .service-item {
+        margin: 20px 0; /* Większy odstęp między usługami */
+    }
+
+    #scrollToTop {
+        bottom: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+        line-height: 50px;
+    }
+}
+
+/* Dla urządzeń o szerokości mniejszej niż 480px (małe telefony) */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2rem; /* Jeszcze mniejszy rozmiar czcionki dla nagłówka */
+    }
+
+    nav ul li a {
+        font-size: 1.2rem; /* Mniejszy rozmiar czcionki w menu */
+    }
+
+    section {
+        padding: 10px; /* Mniejszy padding w sekcjach */
+        margin: 10px;
+    }
+
+    #about h2,
+    #services h2,
+    #gallery h2,
+    #contact h2 {
+        font-size: 1.5rem; /* Mniejszy rozmiar nagłówków sekcji */
+    }
+
+    #about p,
+    #services ul,
+    #gallery p,
+    #contact p {
+        font-size: 1rem; /* Mniejszy rozmiar tekstu w sekcjach */
+    }
+}
